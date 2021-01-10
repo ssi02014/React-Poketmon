@@ -48,3 +48,20 @@ nav {
     width: 30%;
   }
 }
+
+.search-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination {
+  display: flex;
+  width: 50%;
+  margin: 20px auto;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
