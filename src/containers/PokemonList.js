@@ -17,14 +17,18 @@ const PokemonList = () => {
     console.log(pokemonList.data);
     const ShowData = () => {
         if (!_.isEmpty(pokemonList.data)) {
-            return pokemonList.data.map(el => {
-                return (
-                    <div>
-                        <p>{el.name}</p>
-                        <Link to={`/pokemon/${el.name}`}>View</Link>
-                    </div>
-                );
-            });
+            return (
+                <div className={"list-wrapper"}>
+                    {pokemonList.data.map(el => {
+                        return(
+                            <div className={"pokemon-item"}>
+                                <p>{el.name}</p>
+                                <Link to={`/pokemon/${el.name}`}>View</Link>
+                            </div>
+                        )
+                    })}
+                </div>
+            );
         };
 
         if (pokemonList.loading) {

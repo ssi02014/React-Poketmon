@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <NavLink to={"/pokemon/test"}>Search</NavLink>
+        <NavLink to={"/"}>Search</NavLink>
       </nav>
       <Switch>
         <Route path={"/"} component={PokemonList} exact></Route>
