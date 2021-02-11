@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <nav>
+        <NavLink to={"/"}>Pokemon</NavLink>
         <NavLink to={"/"}>Search</NavLink>
       </nav>
       <Switch>

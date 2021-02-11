@@ -8,10 +8,6 @@ export const GetPokemonList = (page) => async dispatch => {
         const perPage = 15;
         const offset = (page * perPage) - perPage;
 
-        //page 1 => offset = 0
-        //page 2 => offset = 15
-        //page 3 => offset = 30
-
         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${perPage}&offset=${offset}`);
 
         dispatch({

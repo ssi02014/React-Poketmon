@@ -24,7 +24,7 @@ const PokemonList = (props) => {
                     {pokemonList.data.map(el => {
                         return(
                             <div className={"pokemon-item"}>
-                                <p>{el.name}</p>
+                                <Link to={`/pokemon/${el.name}`}>{el.name}</Link>
                                 <Link to={`/pokemon/${el.name}`}>View</Link>
                             </div>
                         )
